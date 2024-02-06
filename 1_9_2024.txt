@@ -1,0 +1,123 @@
+Class Meeting 1/9/2024
+
+A Programming Language is a notation for describing Algorithm and Data.
+A Program is a sentence of a programming language.
+
+{source file}
+    Class{
+        -> Method{
+                ->Statement{}}}
+
+A Program may perform one task.
+
+Programming Languages:
+
+1.) High Level Languages: The compiler is involved. Designed to be readible, so that it is similar
+to human language. Such as C++/Python, Java, C.
+
+2.) Mid Level Languages: The assembler is involved. mnemonics
+
+3.) Low Level Languages: Binary Code
+
+FORTRAN (FORmula TRANslator)
+- Created in 1954
+- The first high level language
+- Developed by using the first compiler ever made.
+- Machine independent
+- In 1958 introduced subroutines, functions, loops, and primitive for loops.
+
+LISP (LISt Processing)
+- Created in 1958 and released in 1960
+- Lisp was intended for writing AI programs
+- It uses Atoms and List as a data structure:
+-> Atom: Numeric, 1, 2, 3, ... 
+         Symbolic, "Book", etc.
+-> Lists: (This is a list of 7 atoms)
+
+(This is a list)
+
+     00
+       \
+        00
+       /   \
+    This    00
+           /  \
+        is     00
+              /  \
+            a     0(lambda) 
+                 / 
+               list
+
+EX: ( * (+ 1 2)(-7 3))
+
+
+
+
+    
+
+
+
+
+
+
+
+_ Fuctional Programming Style: all component computation is performed by applying
+functions to arguments variable declaration are rarely used.
+
+- A Reliance on Recursion: a strong Reliance on Recursion
+has allowed LISP to be successful in many areas, including AI.
+
+- Garbage collection: LISP has built-in garbage collection, so programmers
+do not need to explicitly free dynamically allocated memory.
+
+Propostional Logic: 
+Every Man is immortal,
+Socratees is a man,
+-> Therefore, Socrates is immortal.
+
+COBOL (Common Business Oriented Language)
+- The CODASYL( COnference on Data SYstems Languages)
+worked from May 1959 to April 1960
+- Object Oriented version of COBOL was introduced in 1997
+- Introduced the Record Data Structure.
+- (There are different Divisions in COBOL)
+    - Identification: Information about the code (date, author,...)
+    - Environment
+    - Data
+    - Procedure: Where the logic and code is written.
+
+
+ALGOL (ALGOrithmic Language)
+- It was released in 1960 
+- It was the first Block Structured Language.
+    An example of a Block Structure is a main method in Java,
+    we may have multiple blocks to run different tasks.
+
+- Considered to be the first second generation Computer Language.
+- Machine indepenedent language.
+
+Scope of a variable:
+
+    public class Scope{
+        public static void main(String() args){
+            double r;
+            r = 3.14;
+        }
+        System.out.println(r);
+    }
+
+Backus Naur Form (BNF)
+
+< symbols ) := exp1|exp2|...|expu
+Non-terminal     terminal/nonterminal
+
+nonterminals -> Terminals
+
+Example:    S-> aBa
+            B-> bB|e
+            A-> a|b
+
+S -> aBa -> aA ->ab
+
+
+

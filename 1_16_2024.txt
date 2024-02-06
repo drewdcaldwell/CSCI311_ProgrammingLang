@@ -1,0 +1,11 @@
+Class Notes 1/16/2024
+
+What is a Data Object?
+A Data Object represents a container for data values, where data values may be stored and later retrieved
+A runtime grouping of one or more pieces of data in a virtual computer.
+A Location in memory with an assignment name in the actual computer.
+Data objects can be:
+    1) at program execution - Programer-defined - some examples are constants, arrays, files, etc.
+    2) not directly accessible to programmer- system defined- run time storage, stacks,
+    file buffers, free space lists
+

@@ -1,0 +1,178 @@
+Class Meeting 1/11/2024
+
+Continuing on the same slide show as 1/9/2024
+
+SNOBOL (StriNg Oriented symBOlic Language)
+- Created in 1964
+- Intended for Strings.
+- First language to use Associative arrays, indexed by any key.
+
+    - An indexed variable
+
+        array1=("Tom","Robert",..., "2.5")
+
+        key || value
+       ================
+        0   || Tom
+       ================
+        1   || Robert
+       ================
+        ... || ...
+       ================
+        6   || 2.5  
+
+    - An associate array (a dictionary in python)
+
+        key             || value
+       ================================
+        first name      || Tom
+       ================================
+        last name       || Roberts
+       ================================
+        ...             || ...
+       ================================
+        Years of service|| 2.5  
+
+- Had features of pattern matching, concatenation, and alternation.
+- It allowed running code stored in strings.
+- Data types: -integer, real, array, pattern, and user-defined types.
+
+struct point{
+    int x;
+    int y;
+    float z;
+}
+
+int a;
+float y;
+
+So we may now have a variable of type point. Thus,
+point var;
+
+
+BASIC (Beginer's All-purpose Symbolic Instruction Code)
+- Designed as a teaching language in 1963 by John George Kemeny and Thomas Eugene
+Kurts of Dartmouth College
+-Intended to make it easy to learn programming
+
+PL/I (Programming Language One)
+- Created in 1964
+- Intended to combine the features of Fortran with Cobol, plus additional facilities for system programming
+- Also borrows from ALGOL 60.
+- Originally called NPL (New Programming Language)
+- Introduced storage classes (automatic, static, controlled and based),
+ exception processing (on condition).
+- It uses Select when otherwise conditional structure and several variations of the DO Loop.
+-It uses numerous data types.
+
+Pascal
+- Named for French mathematician Blaise Pascal, developed by Niklaus Wirth
+- Created in 1970
+- It was intended to replace BASIC for teaching
+- It was quickly developed as a general-purpose language.
+- Compiler for Pascal was written in Pascal.
+
+C Language
+- It was developed from "1969 - 1972" by Dennis Ritchie
+- It was used in system programming for UNIX
+- The American national standards Institute (ANSI), formed a technical sub committee,
+X3J||, to create a standard for C language and it runtime libraries.
+
+ADA
+- It was released in "1983 (ADA 83)", with major releases in "1995, ADA 95" and "2005, 1005 (ADA 2005)"
+- It was created by U.S. Department of Defence (DoD)
+- It was intended for embedded system and later intended for all military computing purposes.
+
+Perl (Practical Extracting and Report Language)
+- It was created by Larrywall ball in 1987
+- It was intended to replace the UnixShell, Sed, AWK.
+- Helps in automation
+
+Python 
+- It was created in 1991 by GuidoVan Rossum
+- A scripting language with dynamic type, intended to replace Perl.
+- Named after "Monty Python's Flying Circus" TV show
+    
+
+= = = = = = = = Lecture 2.pdf = = = = = = = =
+
+Clarity:
+    A Programming language provides both a conceptual framework for Algorithmplanning and means
+ of expressing them. It should provide a clear, simple and unified set of concepts that can be 
+ used as primitives in developing algorithms.
+
+Simplicity:
+    It should have
+    - It has minimum number of different concepts
+    - With rules for their combination being simple and regular.
+    - This attribute is called conceptual integrity.
+
+Orthogonality:
+    - It is one of the most important feature of PL orthogonality is the property that means 
+"Changing A does not change B".
+    - If I take a real-world example of an orthogonal system, it would be a radio where changing
+the station does not change the volume and vice versa.
+    - When the features of a language are orthogonal, language is easier to learn and programs 
+are easier to write because only a few exceptions and special cases are to be remembered
+
+Support for Abstractions:
+    There is always found that a substantial gap remaining between the abstract data structure and 
+operations that characterize the solution to a problem and their particular data structure and 
+operations built into a language.
+
+
+// A Simple Function //
+public static double multiply(double a, double b){
+    return a*b;
+}
+double product = multiply(7,5)
+
+Programming Environment:
+    - An appropriate programming environment adds an extra utility and makes language to be implemented
+    easily like.
+
+
+Programming Language Translator:
+    - To execute a computer program writeen in high level language must be translated into machine understandable
+language that is machine language or machine code.
+    - A translator is basically computer program that performs the translation of a program written in a given
+programming language into functionality equivalent program in a different computer language, without losing
+the functional or logical structure of the original code.
+    - There are three types of Programming Language Translators:
+        - assembler
+        - compilers
+        - interpreters
+    - Source code is the input
+    - Executable code is the outut
+
+Assembler:
+- An Assembly Language which is basically MNEMONICS like GO, HALT, etc.
+- Assembler is a program that takes assembly and converts them into patterns of bits that the computer processor
+can use to perform its basic operation. This pattern of bits is basically Machine Language.
+
+Mnemonics examples
+===============
+MOV R_1, R_2
+===============
+ADD R_3, 10
+===============
+SUB D_x, A_x
+
+Compiler:
+    - The compiler is a program that translates a high level language into machine code
+    - Advantages of a compiler:
+    1) It is fast in execution
+    Source Code -> Compiler -> Machine Code -> Executable Program
+
+Interpreter:
+    - An interpreter is also a program that translates high level source code into Executable Code
+    - The difference between a compiler and an interpreter is that an interpreter translates one line
+at a time and then executes it.No object code is produced, and so the program has to be interpreted
+each time it is to be run.
+    - Advantages of an interpreter:
+    1) Good at locating errors in the program
+    Source Code -> Interpreter -> Executable Program
+            ^                              |
+            |__________Next Line___________|
+
+Scripting language is easier to write than High Level Languages
